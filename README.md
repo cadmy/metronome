@@ -5,4 +5,4 @@ To try out this way please open the link http://cadmy.ru/metronome.html.
 
 You can set the bpm rate by sending a parameter in a URL like http://cadmy.ru/metronome.html/metronome.html?bpm=120.
 
-A default bpm is 80.
+The default bpm is 80.
