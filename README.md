@@ -1,4 +1,4 @@
-# metronome
+# Color metronome
 When playing a musical instrument, metronome sound sometimes is drowned out. So the color metronome allows you to follow rhythm by screen glow.
 
 To try out this way please open the link http://cadmy.ru/metronome.html.
