@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Metronom</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event)  {
+                var newtime = 750;
+                var url_string = window.location.href; //
+                var url = new URL(url_string);
+                var bpm = url.searchParams.get("bpm");
+                if (bpm > 0) {
+                    newtime = (60/bpm)*1000;
+                }
+                var color = 0;
+                multiStep();
+                function multiStep() {
+                    switch (color) {
+                            case 0:
+                                document.body.style.background = "red";
+                                color++;
+                                break;
+                            case 1:
+                                document.body.style.background = "yellow";
+                                color++;
+                                break;
+                            case 2:
+                                document.body.style.background = "green";
+                                color++;
+                                break;
+                            case 3:
+                                document.body.style.background = "blue";
+                                color = 0;
+                                break;
+                            }
+                    
+                    setTimeout(multiStep, newtime);
+                }
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
